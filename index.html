@@ -45,6 +45,7 @@
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 8px;
+      letter-spacing: 0.5px;
     }
 
     .subtitle {
@@ -61,6 +62,7 @@
       padding: 6px 18px;
       border-radius: 50px;
       font-size: 0.85rem;
+      letter-spacing: 0.5px;
     }
 
     .divider {
@@ -74,6 +76,57 @@
       line-height: 1.7;
       color: rgba(255,255,255,0.75);
     }
+
+    .about {
+      margin-top: 36px;
+      text-align: left;
+    }
+
+    .about h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #a78bfa;
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .skill-tag {
+      background: rgba(167, 139, 250, 0.15);
+      border: 1px solid rgba(167, 139, 250, 0.35);
+      color: #c4b5fd;
+      padding: 4px 14px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+    }
+
+    .contact-links {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+
+    .contact-links a:hover {
+      color: #a78bfa;
+    }
   </style>
 </head>
 <body>
@@ -83,7 +136,28 @@
     <p class="subtitle">Добро пожаловать на мой сайт</p>
     <span class="badge">Portfolio — в разработке</span>
     <hr class="divider"/>
-    <p>Привет! Я создаю этот сайт как своё портфолио. Скоро здесь появятся мои проекты, навыки и контакты. Следите за обновлениями!/p>
+    <p>Привет! Я создаю этот сайт как своё портфолио. Скоро здесь появятся мои проекты, навыки и контакты. Следите за обновлениями!</p>
+
+    <div class="about">
+      <h2>🧑‍💻 О себе</h2>
+      <p>Я — Никитин, начинающий разработчик с интересом к веб-технологиям и созданию современных интерфейсов. Увлекаюсь автоматизацией, работой с данными и построением удобных цифровых продуктов.</p>
+
+      <div class="skills">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Figma</span>
+      </div>
+
+      <hr class="divider"/>
+      <h2>📬 Контакты</h2>
+      <div class="contact-links">
+        <a href="https://github.com/rn19h" target="_blank">🐙 GitHub — github.com/rn19h</a>
+        <a href="mailto:your@email.com">✉️ Email — your@email.com</a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
